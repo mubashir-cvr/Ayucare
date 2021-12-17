@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="{%static 'css/responsive.css' %}">
     <link rel="stylesheet" href="{%static 'css/icofont/icofont.min.css' %}">
 
-    <link href="images/about.png' %}" rel="icon">
+    <link href="{% static 'images/about.png' %}" rel="icon">
     <title>Ayurcare</title>
 </head>
 
@@ -25,12 +25,12 @@
     <nav class="site-navigationn" role="navigation">
         <div id="closse"><span class="closse iconify" data-icon="ant-design:close-circle-outlined"></span></div>
         <ul class="navigationn-ul p-5">
-            <li><a href="index.html" class="nav-link active">HOME</a></li>
-            <li><a href="aboutus.html" class="nav-link">ABOUT US</a></li>
-            <li><a href="products.html" class="nav-link">PRODUCTS</a></li>
-            <li><a href="gallery.html" class="nav-link">GALLERY</a></li>
-            <li><a href="contact.html" class="nav-link">CONTACT US</a></li>
-            <li><a href="doctor.html" class="nav-link">OUR DOCTORS</a></li>
+            <li><a href="{% url 'web:home' %}" class="nav-link active">HOME</a></li>
+            <li><a href="{% url 'web:about' %}" class="nav-link">ABOUT US</a></li>
+            <li><a href="{% url 'web:branch' %}"  class="nav-link">PRODUCTS</a></li>
+            <li><a href="{% url 'web:home' %}"  class="nav-link">GALLERY</a></li>
+            <li><a href="{% url 'web:contact' %}"  class="nav-link">CONTACT US</a></li>
+            <li><a href="{% url 'web:doctor' %}"  class="nav-link">OUR DOCTORS</a></li>
         </ul>
     </nav>
     <div class="site-mobile-menu site-navbar-target">
@@ -72,12 +72,12 @@
                 <div class="col-lg-8 col-8">
                     <nav class="site-navigation" role="navigation">
                         <ul class="site-menu main-menu js-clone-nav d-none d-lg-block">
-                            <li><a href="index.html" class="nav-link active">HOME</a></li>
-                            <li><a href="aboutus.html" class="nav-link">ABOUT US</a></li>
-                            <li><a href="products.html" class="nav-link">PRODUCTS</a></li>
-                            <li><a href="gallery.html" class="nav-link">GALLERY</a></li>
-                            <li><a href="contact.html" class="nav-link">CONTACT US</a></li>
-                            <li><a href="doctor.html" class="nav-link">OUR DOCTORS</a></li>
+                            <li><a href="{% url 'web:home' %}" class="nav-link active">HOME</a></li>
+                            <li><a href="{% url 'web:about' %}" class="nav-link">ABOUT US</a></li>
+                            <li><a href="{% url 'web:branch' %}"  class="nav-link">PRODUCTS</a></li>
+                            <li><a href="{% url 'web:home' %}"  class="nav-link">GALLERY</a></li>
+                            <li><a href="{% url 'web:contact' %}"  class="nav-link">CONTACT US</a></li>
+                            <li><a href="{% url 'web:doctor' %}"  class="nav-link">OUR DOCTORS</a></li>
                         </ul>
                     </nav>
                 </div>

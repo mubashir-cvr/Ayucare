@@ -7,7 +7,7 @@
      <div class="container-fluid mb-4">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 p-0">
-                 <img class="title-fit" width="100%" src="images/about.png" style="position: relative;" alt="">
+                 <img class="title-fit" width="100%" src="{% static 'images/about.png' %}" style="position: relative;" alt="">
                  <div class="col-lg-6 col-md-6 col-sm-8 col-8 titile">
                     <h1 style="color: rgb(255, 255, 255);">About <span style="color: #feda77;">Ayurcare</span></h1>
                  </div>
@@ -42,7 +42,7 @@
 <div class="container-fluid mt-5 mb-5 aboout">
     <div class="row">
         <div class="col-lg-7 col-md-12 col-sm-12 col-12 p-0 position-relative">
-            <img class="" src="images/ayurr.png" width="100%" alt="">
+            <img class="" src="{% static 'images/ayurr.png' %}" width="100%" alt="">
         </div>
 
         <div class="col-lg-7 col-md-10 col-sm-10 col-10 position-absolute ayurrr">
@@ -60,7 +60,7 @@
 <div class="container-fluid mt-5 mb-5 aboout">
     <div class="row">
         <div class="col-lg-7 col-md-12 col-sm-12 col-12 p-0 position-relative">
-            <img class="" src="images/ayurr.png" width="100%" alt="">
+            <img class="" src="{% static 'images/ayurr.png' %}" width="100%" alt="">
         </div>
 
         <div class="col-lg-7 col-md-10 col-sm-10 col-10 position-absolute ayurrr">
@@ -98,7 +98,7 @@
         </div>
 
         <div class="col-lg-7 col-md-12 col-sm-12 col-12 p-0 position-absolute imgayur">
-            <img src="images/ayur2.png" width="100%" alt="">
+            <img src="{% static 'images/ayur2.png' %}" width="100%" alt="">
         </div>
 
         
@@ -150,7 +150,7 @@
 <div class="container-fluid care">
     <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 col-12 p-0">
-            <img class="loc-sm" style="position: relative;" src="images/suscribe.png" width="100%" alt="">
+            <img class="loc-sm" style="position: relative;" src="{% static 'images/suscribe.png' %}" width="100%" alt="">
             <div class="col-lg-6 col-md-12 col-sm-12 col-12 locate locates">
                 <p>Stay in Touch with us</p>
                 <p class="mb-3">Know more about <span class="ayt">Ayucare</span> </p>
@@ -168,10 +168,10 @@
 {% block javascript %}
 
 
-<script src="js/popper.min.js%2bbootstrap.min.js%2bjquery.sticky.js%2bmain.js.pagespeed.jc.u3tlxHiX01.js"></script>
+<script src="{% static 'js/popper.min.js%2bbootstrap.min.js%2bjquery.sticky.js%2bmain.js.pagespeed.jc.u3tlxHiX01.js' %}"></script>
 <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="js/main.js"></script>
+<script src="{% static 'js/main.js' %}"></script>
 
 <script>
     $(document).ready(function(){
