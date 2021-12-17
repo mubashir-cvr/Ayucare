@@ -1,109 +1,16 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;700;800;900;1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/fonts,_icomoon,_style.css+css,_owl.carousel.min.css+css,_bootstrap.min.css+css,_style.css.pagespeed.cc.11YcxEXwqA.css" />
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/icofont/icofont.min.css">
-
-    <link href="images/about.png" rel="icon">
-    <title>Ayurcare</title>
-</head>
-
-<body>
-
-    <!-- start Header -->
-
-    <nav class="site-navigationn" role="navigation">
-        <div id="closse"><span class="closse iconify" data-icon="ant-design:close-circle-outlined"></span></div>
-        <ul class="navigationn-ul p-5">
-            <li><a href="index.html" class="nav-link active">HOME</a></li>
-            <li><a href="aboutus.html" class="nav-link">ABOUT US</a></li>
-            <li><a href="products.html" class="nav-link">PRODUCTS</a></li>
-            <li><a href="gallery.html" class="nav-link">GALLERY</a></li>
-            <li><a href="contact.html" class="nav-link">CONTACT US</a></li>
-            <li><a href="doctor.html" class="nav-link">OUR DOCTORS</a></li>
-        </ul>
-    </nav>
-    <div class="site-mobile-menu site-navbar-target">
-        <div class="site-mobile-menu-header">
-            <div class="site-mobile-menu-close mt-3">
-                <span class="icon-close2 js-menu-toggle"></span>
-            </div>
-        </div>
-        <div class="site-mobile-menu-body"></div>
-    </div>
-    <div class="top-bar" id="hre1">
-        <div class="container">
-            <div class="row justih">
-                <div class="col-lg-4 col-4 dd-none">
 
 
-                    <a href="#" class="pr-2"><span class="iconify" data-icon="bi:twitter"></span> </a>
-                    <a href="#" class="pr-2"><span class="iconify" data-icon="bi:facebook"></span> </a>
-                    <a href="#" class=""><span class="iconify" data-icon="bi:instagram"></span> </a>
+{% extends 'partials/base.html' %}
+{% load static %}
+{% block title %}Home{% endblock %}
 
-                </div>
-                <div class="col-lg-4 col-4 text-center">
-                    <h2 style="font-weight: 800;">LOGO</h2>
-                </div>
-                <div class="col-lg-4 col-4 dd-none text-center">
-                    <a href="mailto:info@ayucare.com" class="mr-3">info@ayucare.com</a>
-                    <a href="tel:+919876543210" class=""><span class="d-none d-md-inline-block">(+91)9876543210</span></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    <header id="header" class="site-navbar js-sticky-header site-navbar-target" role="banner">
-        <div class="container-fluid p-0">
-            <div class="row position-relative">
-
-
-
-                <div class="col-lg-8 col-8">
-                    <nav class="site-navigation" role="navigation">
-                        <ul class="site-menu main-menu js-clone-nav d-none d-lg-block">
-                            <li><a href="index.html" class="nav-link active">HOME</a></li>
-                            <li><a href="aboutus.html" class="nav-link">ABOUT US</a></li>
-                            <li><a href="products.html" class="nav-link">PRODUCTS</a></li>
-                            <li><a href="gallery.html" class="nav-link">GALLERY</a></li>
-                            <li><a href="contact.html" class="nav-link">CONTACT US</a></li>
-                            <li><a href="doctor.html" class="nav-link">OUR DOCTORS</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col-lg-1 col-1 search">
-                    <a href="#"><span class="iconify" data-icon="bi:search"></span> </a>
-                </div>
-                <div class="col-lg-2 locate">
-                    <a href="branch.html" class="branch float-right">LOCATE BRANCH</a>
-                </div>
-                <div class="toggle-button d-inline-block d-lg-none"><a href="#" style="color: black;" class="site-menu-toggle py-5 js-menu-toggle text-black"><span class="iconify text-black" data-icon="gg:menu"></span></a>
-                </div>
-            </div>
-        </div>
-    </header>
-
-
-    <!-- end Header -->
-
-
-
+{% block content %}
     <div class="main">
 
         <div class="container-fluid mb-4">
             <div class="row">
                 <div class="col-lg-12 col-12 p-0">
-                    <img class="banbg" width="100%" src="images/banner.png" style="position: relative;" alt="">
+                    <img class="banbg" width="100%" src="{%static 'images/banner.png' %}" style="position: relative;" alt="">
 
                     <div class="col-lg-6 col-10 ayurveda">
                         <h1>AYURVEDA</h1>
@@ -134,7 +41,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-5 col-12 p-0 sm-rela">
-                    <img width="100%" src="images/abouthome.png" alt="">
+                    <img width="100%" src="{%static 'images/abouthome.png' %}' %}" alt="">
                 </div>
                 <div class="col-lg-7 col-9 about sm-absolu">
                     <div class="aboutt">
@@ -171,7 +78,7 @@
 
 
         <div class="p-0 container-fluid">
-            <img style="position: absolute;" width="100%" class="blur sm-why" src="images/whybg.png" alt="">
+            <img style="position: absolute;" width="100%" class="blur sm-why" src="{%static 'images/whybg.png' %}" alt="">
             <div class="row topp mr-100">
                 <div class="col-lg-8 col-10 why">
                     <h2>Why <span>Ayurcare</span> </h2>
@@ -179,7 +86,7 @@
                     <button onclick="readw()" class="read">READ MORE</button>
                 </div>
                 <div class="col-lg-4 pr-0 dd-none">
-                    <img src="images/whyside.png" class="float-right just" width="80%" alt="">
+                    <img src="{%static 'images/whyside.png' %}" class="float-right just" width="80%" alt="">
                 </div>
             </div>
         </div>
@@ -195,7 +102,7 @@
                             <svg class="ml-3 mr-3 svg-20" width="15" height="15" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M26.5417 10.9375C26.25 7.875 26.1042 4.8125 26.3958 1.60417C24.6458 3.9375 22.6042 5.97917 20.5625 8.02083C19.3958 5.39583 18.2292 2.77083 17.5 0C16.7708 2.77083 15.6042 5.39583 14.4375 8.02083C12.3958 6.125 10.3542 3.9375 8.60417 1.60417C8.89583 4.8125 8.75 7.875 8.45833 10.9375C5.6875 9.91667 2.625 8.75 0 7.29167C3.9375 14.2917 5.54167 22.6042 7.875 28C9.1875 32.0833 12.9792 35 17.5 35C22.0208 35 25.9583 32.0833 27.2708 27.8542C29.4583 22.6042 31.0625 14.2917 35 7.29167C32.375 8.75 29.3125 9.91667 26.5417 10.9375ZM24.7917 5.6875C24.7917 7.72917 24.7917 9.625 24.9375 11.375C25.375 11.2292 23.7708 11.8125 22.75 12.1042C22.3125 11.2292 21.875 10.3542 21.2917 9.33333C22.4583 8.3125 23.625 7.14583 24.7917 5.6875ZM10.0625 11.5208C10.2083 9.77083 10.2083 7.875 10.2083 5.6875C11.375 7 12.5417 8.3125 13.7083 9.47917C13.2708 10.3542 12.8333 11.375 12.25 12.25C11.0833 11.8125 9.625 11.375 10.0625 11.5208ZM5.10417 12.3958C7.29167 13.2708 9.33333 14 11.0833 14.5833C9.91667 16.7708 8.89583 18.9583 8.16667 20.8542C7.4375 18.6667 6.41667 15.6042 5.10417 12.3958ZM17.5 32.0833C13.4167 32.0833 10.2083 28.875 10.2083 24.7917C10.2083 20.7083 13.125 17.5 17.5 7.29167C21.875 17.5 24.7917 20.7083 24.7917 24.7917C24.7917 28.875 21.5833 32.0833 17.5 32.0833ZM26.8333 20.8542C26.1042 18.9583 25.0833 16.9167 23.9167 14.5833C25.6667 14 27.7083 13.2708 29.8958 12.3958C28.5833 15.6042 27.5625 18.5208 26.8333 20.8542Z" fill="#E9D985"/>
                     </svg>
-                            <svg width="10" height="10" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="10" height="10" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg'">
                             <path d="M26.5417 10.9375C26.25 7.875 26.1042 4.8125 26.3958 1.60417C24.6458 3.9375 22.6042 5.97917 20.5625 8.02083C19.3958 5.39583 18.2292 2.77083 17.5 0C16.7708 2.77083 15.6042 5.39583 14.4375 8.02083C12.3958 6.125 10.3542 3.9375 8.60417 1.60417C8.89583 4.8125 8.75 7.875 8.45833 10.9375C5.6875 9.91667 2.625 8.75 0 7.29167C3.9375 14.2917 5.54167 22.6042 7.875 28C9.1875 32.0833 12.9792 35 17.5 35C22.0208 35 25.9583 32.0833 27.2708 27.8542C29.4583 22.6042 31.0625 14.2917 35 7.29167C32.375 8.75 29.3125 9.91667 26.5417 10.9375ZM24.7917 5.6875C24.7917 7.72917 24.7917 9.625 24.9375 11.375C25.375 11.2292 23.7708 11.8125 22.75 12.1042C22.3125 11.2292 21.875 10.3542 21.2917 9.33333C22.4583 8.3125 23.625 7.14583 24.7917 5.6875ZM10.0625 11.5208C10.2083 9.77083 10.2083 7.875 10.2083 5.6875C11.375 7 12.5417 8.3125 13.7083 9.47917C13.2708 10.3542 12.8333 11.375 12.25 12.25C11.0833 11.8125 9.625 11.375 10.0625 11.5208ZM5.10417 12.3958C7.29167 13.2708 9.33333 14 11.0833 14.5833C9.91667 16.7708 8.89583 18.9583 8.16667 20.8542C7.4375 18.6667 6.41667 15.6042 5.10417 12.3958ZM17.5 32.0833C13.4167 32.0833 10.2083 28.875 10.2083 24.7917C10.2083 20.7083 13.125 17.5 17.5 7.29167C21.875 17.5 24.7917 20.7083 24.7917 24.7917C24.7917 28.875 21.5833 32.0833 17.5 32.0833ZM26.8333 20.8542C26.1042 18.9583 25.0833 16.9167 23.9167 14.5833C25.6667 14 27.7083 13.2708 29.8958 12.3958C28.5833 15.6042 27.5625 18.5208 26.8333 20.8542Z" fill="#E9D985"/>
                     </svg>
                         </div>
@@ -322,41 +229,41 @@
             <div class="row treatment">
                 <div class="col-lg-6 col-md-6 col-sm-6 col-6">
                     <ul>
-                        <li><img class="pb-1" src="images/vector.svg" alt=""> <span class="ml-2">NECK-BACK-SHOULDER-KNEE-HEEL PAIN</span> </li>
-                        <li><img class="pb-1" src="images/vector.svg" alt=""> <span class="ml-2">NUMBNESS-SENSORYLOSS-BURNING NERVE STRETCHING-MUSCLE CRAMPS</span> </li>
-                        <li><img class="pb-1" src="images/vector.svg" alt=""> <span class="ml-2">HEAD ACHE-SINUSITIS-MIGRAINE & TENSION</span> </li>
-                        <li><img class="pb-1" src="images/vector.svg" alt=""> <span class="ml-2">ALLERGY-SNEEZING-COUGH-ASTHMA</span> </li>
-                        <li><img class="pb-1" src="images/vector.svg" alt=""> <span class="ml-2">OVER WEIGHT-SIZE, EXCESS FAT & BELLY</span> </li>
-                        <li><img class="pb-1" src="images/vector.svg" alt=""> <span class="ml-2">EMACIATION, WEIGHT LOSS, UNDER DEVELOPMENT OF ORGAN</span> </li>
-                        <li><img class="pb-1" src="images/vector.svg" alt=""> <span class="ml-2">ACIDITY, GAS,ULCER, CONSTIPATION & PILES</span> </li>
+                        <li><img class="pb-1" src="{%static 'images/vector.svg' %}" alt=""> <span class="ml-2">NECK-BACK-SHOULDER-KNEE-HEEL PAIN</span> </li>
+                        <li><img class="pb-1" src="{%static 'images/vector.svg' %}" alt=""> <span class="ml-2">NUMBNESS-SENSORYLOSS-BURNING NERVE STRETCHING-MUSCLE CRAMPS</span> </li>
+                        <li><img class="pb-1" src="{%static 'images/vector.svg' %}" alt=""> <span class="ml-2">HEAD ACHE-SINUSITIS-MIGRAINE & TENSION</span> </li>
+                        <li><img class="pb-1" src="{%static 'images/vector.svg' %}" alt=""> <span class="ml-2">ALLERGY-SNEEZING-COUGH-ASTHMA</span> </li>
+                        <li><img class="pb-1" src="{%static 'images/vector.svg' %}" alt=""> <span class="ml-2">OVER WEIGHT-SIZE, EXCESS FAT & BELLY</span> </li>
+                        <li><img class="pb-1" src="{%static 'images/vector.svg' %}" alt=""> <span class="ml-2">EMACIATION, WEIGHT LOSS, UNDER DEVELOPMENT OF ORGAN</span> </li>
+                        <li><img class="pb-1" src="{%static 'images/vector.svg' %}" alt=""> <span class="ml-2">ACIDITY, GAS,ULCER, CONSTIPATION & PILES</span> </li>
 
                     </ul>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6 col-6">
                     <ul>
-                        <li><img class="pb-1" src="images/vector.svg" alt=""> <span class="ml-2">PSORIASIS. DANDRUFF, SKIN DISEASE, FUNGAL INFECTION</span> </li>
-                        <li><img class="pb-1" src="images/vector.svg" alt=""> <span class="ml-2">ACNE, BLACK MARKS, HAIR GROWTH, DRY SKIN</span> </li>
-                        <li><img class="pb-1" src="images/vector.svg" alt=""> <span class="ml-2">CHILDREN'S MEMORY LOSS, LEARNING DISORDERS</span> </li>
-                        <li><img class="pb-1" src="images/vector.svg" alt=""> <span class="ml-2">INSOMNIA, TENSION, MENTAL DISORDERS</span> </li>
-                        <li><img class="pb-1" src="images/vector.svg" alt=""> <span class="ml-2">WOMEN DISORDERS, HORMONE PROBLEMS</span> </li>
-                        <li><img class="pb-1" src="images/vector.svg" alt=""> <span class="ml-2">COURSE SYNDROME SPERM COUNT, MOTILITY DISORDERS</span> </li>
-                        <li><img class="pb-1" src="images/vector.svg" alt=""> <span class="ml-2">HAIR FALL-BREAKING, HAIR LOSSS & PREMATURE GREY</span> </li>
+                        <li><img class="pb-1" src="{%static 'images/vector.svg' %}" alt=""> <span class="ml-2">PSORIASIS. DANDRUFF, SKIN DISEASE, FUNGAL INFECTION</span> </li>
+                        <li><img class="pb-1" src="{%static 'images/vector.svg' %}" alt=""> <span class="ml-2">ACNE, BLACK MARKS, HAIR GROWTH, DRY SKIN</span> </li>
+                        <li><img class="pb-1" src="{%static 'images/vector.svg' %}" alt=""> <span class="ml-2">CHILDREN'S MEMORY LOSS, LEARNING DISORDERS</span> </li>
+                        <li><img class="pb-1" src="{%static 'images/vector.svg' %}" alt=""> <span class="ml-2">INSOMNIA, TENSION, MENTAL DISORDERS</span> </li>
+                        <li><img class="pb-1" src="{%static 'images/vector.svg' %}" alt=""> <span class="ml-2">WOMEN DISORDERS, HORMONE PROBLEMS</span> </li>
+                        <li><img class="pb-1" src="{%static 'images/vector.svg' %}" alt=""> <span class="ml-2">COURSE SYNDROME SPERM COUNT, MOTILITY DISORDERS</span> </li>
+                        <li><img class="pb-1" src="{%static 'images/vector.svg' %}" alt=""> <span class="ml-2">HAIR FALL-BREAKING, HAIR LOSSS & PREMATURE GREY</span> </li>
 
-                        <!-- <li><img class="pb-1" src="images/vector.svg" alt=""> <span class="ml-2">Piles</span> </li>
-                        <li><img class="pb-1" src="images/vector.svg" alt=""> <span class="ml-2">Psoriasis</span> </li> -->
+                        <!-- <li><img class="pb-1" src="{%static 'images/vector.svg' %}" alt=""> <span class="ml-2">Piles</span> </li>
+                        <li><img class="pb-1" src="{%static 'images/vector.svg' %}" alt=""> <span class="ml-2">Psoriasis</span> </li> -->
 
                     </ul>
                 </div>
                 <!-- <div class="col-lg-4 col-md-6 col-sm-12 col-12 dd-none">
                     <ul>
-                        <li><img class="pb-1" src="images/vector.svg" alt=""> <span class="ml-2">Acne</span> </li>
-                        <li><img class="pb-1" src="images/vector.svg" alt=""> <span class="ml-2">Children’s memory loss</span> </li>
-                        <li><img class="pb-1" src="images/vector.svg" alt=""> <span class="ml-2">Learning Disorders</span> </li>
-                        <li><img class="pb-1" src="images/vector.svg" alt=""> <span class="ml-2">Woman disorders</span> </li>
-                        <li><img class="pb-1" src="images/vector.svg" alt=""> <span class="ml-2">Course Syndrome Sperm Count</span> </li>
-                        <li><img class="pb-1" src="images/vector.svg" alt=""> <span class="ml-2">Constipation</span> </li>
-                        <li><img class="pb-1" src="images/vector.svg" alt=""> <span class="ml-2">Insomnia</span> </li>
-                        <li><img class="pb-1" src="images/vector.svg" alt=""> <span class="ml-2">Mental Disorders</span> </li>
+                        <li><img class="pb-1" src="{%static 'images/vector.svg' %}" alt=""> <span class="ml-2">Acne</span> </li>
+                        <li><img class="pb-1" src="{%static 'images/vector.svg' %}" alt=""> <span class="ml-2">Children’s memory loss</span> </li>
+                        <li><img class="pb-1" src="{%static 'images/vector.svg' %}" alt=""> <span class="ml-2">Learning Disorders</span> </li>
+                        <li><img class="pb-1" src="{%static 'images/vector.svg' %}" alt=""> <span class="ml-2">Woman disorders</span> </li>
+                        <li><img class="pb-1" src="{%static 'images/vector.svg' %}" alt=""> <span class="ml-2">Course Syndrome Sperm Count</span> </li>
+                        <li><img class="pb-1" src="{%static 'images/vector.svg' %}" alt=""> <span class="ml-2">Constipation</span> </li>
+                        <li><img class="pb-1" src="{%static 'images/vector.svg' %}" alt=""> <span class="ml-2">Insomnia</span> </li>
+                        <li><img class="pb-1" src="{%static 'images/vector.svg' %}" alt=""> <span class="ml-2">Mental Disorders</span> </li>
 
                     </ul>
                 </div> -->
@@ -401,7 +308,7 @@
                                 </div>
                             </div>
                             <div class=" col-lg-4 mb-4 d-none d-lg-block">
-                                <img width="75% " src="images/pop.png " alt=" ">
+                                <img width="75% " src="{%static 'images/pop.png' %} " alt=" ">
                             </div>
                             <div class="col-lg-8 pl-4">
 
@@ -413,10 +320,10 @@
                                 </div>
                             </div>
                             <div class="col-lg-2 pr-0 mx-wid d-none d-lg-block">
-                                <img width="80% " src="images/pop1.png " alt=" ">
+                                <img width="80% " src="{%static 'images/pop1.png' %} " alt=" ">
                             </div>
                             <div class="col-lg-2 pl-0 mx-wid d-none d-lg-block">
-                                <img width="80% " src="images/pop2.png " alt=" ">
+                                <img width="80% " src="{%static 'images/pop2.png' %} " alt=" ">
                             </div>
                             <div class="col-lg-12 text-center mt-3 mb-3 sm-mg">
                                 <button onclick="readout()" class="read ">DONE</button>
@@ -426,7 +333,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4 ">
-                    <img style="position:relative " width="100% " src="images/t1.png " alt=" ">
+                    <img style="position:relative " width="100% " src="{%static 'images/t1.png' %} " alt=" ">
                     <div style="position:absolute; " class="content ">
                         <h2>NECK-BACK-SHOULDER-KNEE-HEEL PAIN</h2>
                         <p>Pain is an uncomfortable sensation that implies something is going wrong with certain parts of the body.</p>
@@ -435,7 +342,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4 ">
-                    <img style="position:relative " width="100% " src="images/t2.png " alt=" ">
+                    <img style="position:relative " width="100% " src="{%static 'images/t2.png' %} " alt=" ">
                     <div style="position:absolute; " class="content ">
                         <h2>ALLERGY-SNEEZING-COUGH-ASTHMA</h2>
                         <p>There are several allergens that lead your body to react vigorously and make the individual miserable.</p>
@@ -449,7 +356,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4 ">
-                    <img style="position:relative " width="100% " src="images/t3.png " alt=" ">
+                    <img style="position:relative " width="100% " src="{%static 'images/t3.png' %} " alt=" ">
                     <div style="position:absolute; " class="content ">
                         <h2>OVER WEIGHT-SIZE, EXCESS FAT & BELLY</h2>
                         <p>Excess accumulation of fat can impair the body and health causing physical and mental discomforts.</p>
@@ -459,7 +366,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4 ">
-                    <img style="position:relative " width="100% " src="images/t4.png " alt=" ">
+                    <img style="position:relative " width="100% " src="{%static 'images/t4.png' %} " alt=" ">
                     <div style="position:absolute; " class="content ">
                         <h2>INSOMNIA, TENSION, MENTAL DISORDERS</h2>
                         <p>A mental disorder or mental illness or psychiatric disorder is a mental pattern that causes insignificant distress.</p>
@@ -474,7 +381,7 @@
 
 
         <div class="vector text-center mb-4 ">
-            <svg class="svg-20 " width="35 " height="35 " viewBox="0 0 35 35 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+            <svg class="svg-20 " width="35 " height="35 " viewBox="0 0 35 35 " fill="none " xmlns="http://www.w3.org/2000/svg">
         <path d="M26.5417 10.9375C26.25 7.875 26.1042 4.8125 26.3958 1.60417C24.6458 3.9375 22.6042 5.97917 20.5625 8.02083C19.3958 5.39583 18.2292 2.77083 17.5 0C16.7708 2.77083 15.6042 5.39583 14.4375 8.02083C12.3958 6.125 10.3542 3.9375 8.60417 1.60417C8.89583
                                         4.8125 8.75 7.875 8.45833 10.9375C5.6875 9.91667 2.625 8.75 0 7.29167C3.9375 14.2917 5.54167 22.6042 7.875 28C9.1875 32.0833 12.9792 35 17.5 35C22.0208 35 25.9583 32.0833 27.2708 27.8542C29.4583 22.6042 31.0625 14.2917
                                         35 7.29167C32.375 8.75 29.3125 9.91667 26.5417 10.9375ZM24.7917 5.6875C24.7917 7.72917 24.7917 9.625 24.9375 11.375C25.375 11.2292 23.7708 11.8125 22.75 12.1042C22.3125 11.2292 21.875 10.3542 21.2917 9.33333C22.4583
@@ -496,7 +403,7 @@
         <div class="container-fluid care ">
             <div class="row ">
                 <div class="col-lg-12 p-0 ">
-                    <img class="dd-none " style="position: relative; " src="images/care.png " width="100% " alt=" ">
+                    <img class="dd-none " style="position: relative; " src="{%static 'images/care.png' %} " width="100% " alt=" ">
                     <div class="col-lg-6 col-md-12 col-sm-12 col-12 locate ">
                         <div class=" input-group ">
                             <input type="text " class="form-control " placeholder="Search District " aria-label="Search District " aria-describedby="basic-addon2 ">
@@ -550,19 +457,19 @@
         <div class="container text-center doctor doc-height ">
             <div class="row ">
                 <div class="col-lg-4 col-md-4 col-sm-12 col-12 mb-3 ">
-                    <img src="images/doctor/Dr Priya Mahesh-10919.jpeg " width="100% " alt=" ">
+                    <img src="{% static 'images/doctor/Dr Priya Mahesh-10919.jpeg' %} " width="100% " alt=" ">
                     <h3>Dr. Priya Mahesh</h3>
                     <h4>BAMS, MD</h4>
                     <button class="read check ">Check Availability</button>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 col-12 mb-3 ">
-                    <img src="images/doctor/Dr Krishna Priya-22600.jpeg " width="100% " alt=" ">
+                    <img src="{% static 'images/doctor/Dr Krishna Priya-22600.jpeg' %} " width="100% " alt=" ">
                     <h3>Dr. Krishna Priya</h3>
                     <h4>BAMS, MD</h4>
                     <button class="read check ">Check Availability</button>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 col-12 mb-3 ">
-                    <img src="images/doctor/Dr. Sumitha U R-22506.jpeg " width="100% " alt=" ">
+                    <img src="{% static 'images/doctor/Dr. Sumitha U R-22506.jpeg' %}" width="100% " alt=" ">
                     <h3>Dr. Sumitha U R</h3>
                     <h4>BAMS, MD</h4>
                     <button class="read check ">Check Availability</button>
@@ -627,13 +534,13 @@
 
             <div class="row ">
                 <div class="col-lg-4 col-md-4 col-sm-12 col-12 mb-3 ">
-                    <img src="images/ts1.png " width="100% " alt=" ">
+                    <img src="{%static 'images/ts1.png' %} " width="100% " alt=" ">
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 col-12 mb-3 dd-none dd-block ">
-                    <img src="images/ts2.png " width="100% " alt=" ">
+                    <img src="{%static 'images/ts2.png' %} " width="100% " alt=" ">
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 col-12 mb-3 dd-none dd-block ">
-                    <img src="images/ts3.png " width="100% " alt=" ">
+                    <img src="{%static 'images/ts3.png' %} " width="100% " alt=" ">
                 </div>
             </div>
             <hr class="mb-5 " width="25% ">
@@ -642,7 +549,7 @@
         <div class="container-fluid care ">
             <div class="row ">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-12 p-0 ">
-                    <img class="loc-sm " style="position: relative; " src="images/suscribe.png " width="100% " alt=" ">
+                    <img class="loc-sm " style="position: relative; " src="{%static 'images/suscribe.png' %} " width="100% " alt=" ">
                     <div class="col-lg-6 col-md-12 col-sm-12 col-12 locate locates ">
                         <p>Stay in Touch with us</p>
                         <p class="mb-3 ">Know more about <span class="ayt ">Ayucare</span> </p>
@@ -660,91 +567,13 @@
 
     </div>
 
-    <!-- start footer -->
+    {% endblock %}
 
-    <footer>
-        <div class="container ">
-            <div class="row pt-5 pb-3 ">
-
-                <div class="mb-3 col-lg-3 col-md-12 col-sm-12 col-12 f1 ">
-                    <div class="row mb-5 flogo ">
-                        <h3 class="text-white ">LOGO</h3>
-                    </div>
-                    <div class="row mt-10 flocat ">
-                        <div class=" input-group ">
-                            <input type="text " class="form-control form-controll " placeholder="Locate us " aria-label="Locate us " aria-describedby="basic-addon2 ">
-                            <div class="input-group-append ">
-                                <span class="input-group-text input-group-textt " style="background-color:#feda77; border-color: #feda77; " id="basic-addon2 "><span class="iconify input-group-textt " data-icon="fluent:location-28-filled "></span></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 col-lg-3 col-md-6 col-sm-6 col-6 f2 use pl-3 ">
-                    <h5>Useful Links</h5>
-                    <ul>
-                        <a href="aboutus.html ">
-                            <li> <span> > </span>ABOUT US</li>
-                        </a>
-                        <a href="products.html ">
-                            <li> <span> > </span>PRODUCTS</li>
-                        </a>
-                        <a href="gallery.html ">
-                            <li> <span> > </span>GALLERY</li>
-                        </a>
-                        <a href="contact.html ">
-                            <li> <span> > </span>CONTACT US</li>
-                        </a>
-                        <a href="doctor.html ">
-                            <li> <span> > </span>OUR DOCTORS</li>
-                        </a>
-
-                    </ul>
-                </div>
-                <div class="mb-3 col-lg-3 col-md-6 col-sm-6 col-6 f3 use ">
-                    <h5>Contact Us</h5>
-                    <ul>
-                        <a href="mailto:info@ayucare.com ">
-                            <li> <span class="iconify mr-2 cont " data-icon="ant-design:mail-twotone "></span>info@ayucare.com</li>
-                        </a>
-                        <a href="tel:+919876543210 ">
-                            <li> <span class="iconify mr-2 cont " data-icon="cil:mobile "></span>(+91)9876543210</li>
-                        </a>
-
-
-                    </ul>
-                </div>
-                <div class="mb-3 col-lg-3 col-md-12 col-sm-12 col-12 f4 follow ">
-
-                    Follow Us on
-                    <a href="# " class="ml-2 pr-2 "><span class="iconify " data-icon="bi:twitter "></span> </a>
-                    <a href="# " class="pr-2 "><span class="iconify " data-icon="bi:facebook "></span> </a>
-                    <a href="# " class=" "><span class="iconify " data-icon="bi:instagram "></span> </a>
-                </div>
-
-            </div>
-            <div class="row justify-content-center copy ">
-                <p>Copyright © 2021. All rights reserved.Design by <a style="color: #feda77; " href="https://gedexo.com/ " target="blank ">Gedexo</a> </p>
-            </div>
-        </div>
-    </footer>
-
-
-    <!-- Button trigger modal -->
-
-
-
-
-
-
-
-
-    <!-- end footer -->
-
-
-    <script src="js/popper.min.js%2bbootstrap.min.js%2bjquery.sticky.js%2bmain.js.pagespeed.jc.u3tlxHiX01.js "></script>
+    {% block javascript %}
+    <script src="{%static 'js/popper.min.js%2bbootstrap.min.js%2bjquery.sticky.js%2bmain.js.pagespeed.jc.u3tlxHiX01.js' %}"></script>
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js "></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
-    <script src="js/main.js "></script>
+    <script src="{%static 'js/main.js' %}"></script>
 
 
     <script>
@@ -777,9 +606,5 @@
             document.getElementById('popuppw').classList.remove('d-block')
         }
     </script>
+    {% endblock %}
 
-</body>
-
-</html>
-
-</html>
